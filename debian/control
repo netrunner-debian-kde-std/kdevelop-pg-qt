@@ -5,10 +5,10 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Fathi Boudra <fabo@debian.org>
 Build-Depends: debhelper (>= 7.4.15), cmake (>= 2.8.0), bison, flex,
  libqt4-dev (>= 4.5.3)
-Standards-Version: 3.8.4
-Homepage: http://www.kdevelop.org/
-Vcs-Svn: svn://svn.debian.org/pkg-kde/trunk/packages/kdevelop-pg-qt
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/trunk/packages/kdevelop-pg-qt/#_trunk_packages_kdevelop-pg-qt_
+Standards-Version: 3.9.1
+Homepage: http://techbase.kde.org/Development/KDevelop-PG-Qt_Introduction
+Vcs-Git: git://git.debian.org/pkg-kde/kde-std/kdevelop-pg-qt.git
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-std/kdevelop-pg-qt.git
 
 Package: kdevelop-pg-qt
 Architecture: any
