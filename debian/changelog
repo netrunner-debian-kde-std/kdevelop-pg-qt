@@ -1,5 +1,5 @@
-kdevelop-pg-qt (0.9.0-0r1) UNRELEASED; urgency=low
+kdevelop-pg-qt (0.9.5-1) unstable; urgency=low
 
   * Initial release. (Closes: #578240)
 
- -- Fathi Boudra <fabo@debian.org>  Sat, 17 Apr 2010 20:52:56 +0300
+ -- Fathi Boudra <fabo@debian.org>  Sat, 04 Jun 2011 12:14:52 +0300
