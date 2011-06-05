@@ -1,9 +1,9 @@
-kdevelop-pg-qt (0.9.5-2) UNRELEASED; urgency=low
+kdevelop-pg-qt (0.9.5-2) unstable; urgency=low
 
   * Fix a couple of portability issues (armel, all big endian arches). This
     should enable kdevelop-php to build on them (fix_portability_issues.diff).
 
- -- Modestas Vainius <modax@debian.org>  Mon, 06 Jun 2011 02:15:57 +0300
+ -- Modestas Vainius <modax@debian.org>  Mon, 06 Jun 2011 02:42:41 +0300
 
 kdevelop-pg-qt (0.9.5-1) unstable; urgency=low
 
