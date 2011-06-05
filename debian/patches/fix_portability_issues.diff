@@ -1,0 +1,62 @@
+From: Modestas Vainius <modax@debian.org>
+Subject: Fix a couple of portability issues
+Forwarded: no
+Origin: vendor
+Last-Update: 2011-06-06
+
+Bugs fixed by this patch:
+
+kdev-pg-lexer.ll:inp() - assumption that it is possible to write directly to
+the int pointer as if it was a char pointer is wrong on big endian systems.
+
+kdev-pg-lexer.ll:YY_INPUT() - (c == EOF) (where c is char) will always be false
+on systems where char is unsigned by default [1][2].
+
+ASBeautifier.cpp:beautify() - (c < 0) (where c is char) will always be false on
+systems where char is unsigned by default [1][2].
+
+[1] warning: comparison is always false due to limited range of data type [-Wtype-limits]
+[2] http://www.network-theory.co.uk/docs/gccintro/gccintro_71.html
+
+--- a/kdev-pg/kdev-pg-lexer.ll
++++ b/kdev-pg/kdev-pg-lexer.ll
+@@ -43,8 +43,8 @@ namespace KDevPG
+ 
+ #define YY_INPUT(buf, result, max_size) \
+   { \
+-    char c = inp(); \
+-    result = (c == EOF) ? YY_NULL : (buf[0] = c, 1); \
++    int c = inp(); \
++    result = (c == EOF) ? YY_NULL : (buf[0] = (char)c, 1); \
+   }
+ 
+ #define YY_USER_ACTION  appendLineBuffer();
+@@ -277,7 +277,7 @@ String      ["]([^\r\n\"]|[\\][^\r\n])*[
+ 
+ %%
+ 
+-int ch;
++char ch;
+ int yyLine = 1, currentOffset = 0;
+ bool endOfLine = false;
+ char yyTextLine[256 * 1024];
+@@ -286,7 +286,7 @@ int inp()
+ {
+   if( KDevPG::file.atEnd() )
+     return EOF;
+-  KDevPG::file.getChar( (char*)&ch );
++  KDevPG::file.getChar( &ch );
+   return ch;
+ }
+ 
+--- a/kdev-pg/ASBeautifier.cpp
++++ b/kdev-pg/ASBeautifier.cpp
+@@ -931,7 +931,7 @@ string ASBeautifier::beautify(const stri
+ 
+ 		// check for utf8 characters
+ 		// isalnum() will display an assert message in debug if not bypassed here
+-		if (ch < 0)
++		if (ch & 0x80)
+ 			continue;
+ 
+ 		// handle special characters (i.e. backslash+character such as \n, \t, ...)
