@@ -1,3 +1,8 @@
+kdevelop-pg-qt (0.9.5-2) UNRELEASED; urgency=low
+
+
+ -- Modestas Vainius <modax@debian.org>  Mon, 06 Jun 2011 02:15:57 +0300
+
 kdevelop-pg-qt (0.9.5-1) unstable; urgency=low
 
   * Initial release. (Closes: #578240)
