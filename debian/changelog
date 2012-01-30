@@ -1,3 +1,9 @@
+kdevelop-pg-qt (1.0.0-0r0) UNRELEASED; urgency=low
+
+  * New upstream release.
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 Jan 2012 21:38:08 +0100
+
 kdevelop-pg-qt (0.9.5-2) unstable; urgency=low
 
   * Fix a couple of portability issues (armel, all big endian arches). This
