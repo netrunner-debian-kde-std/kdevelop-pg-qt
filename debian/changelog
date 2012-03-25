@@ -1,5 +1,6 @@
-kdevelop-pg-qt (1.0.0-0r0) UNRELEASED; urgency=low
+kdevelop-pg-qt (1.0.0-1) experimental; urgency=low
 
+  * Team upload.
   * New upstream release.
 
   [ Andreas Cord-Landwehr ]
@@ -12,7 +13,7 @@ kdevelop-pg-qt (1.0.0-0r0) UNRELEASED; urgency=low
   * Fix the installation of the cmake config files if there is no KDE4 stuff
     available (patch fix_cmake_installation.diff).
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 Jan 2012 21:38:08 +0100
+ -- Pino Toscano <pino@debian.org>  Sun, 25 Mar 2012 16:20:33 +0200
 
 kdevelop-pg-qt (0.9.5-2) unstable; urgency=low
 
