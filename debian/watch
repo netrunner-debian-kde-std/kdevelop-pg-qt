@@ -1,0 +1,3 @@
+version=3
+
+ftp://ftp.kde.org/pub/kde/stable/kdevelop-pg-qt/([\d.]+)/src/kdevelop-pg-qt-([\d.]+).tar.bz2
