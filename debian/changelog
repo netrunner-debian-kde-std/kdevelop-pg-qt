@@ -7,6 +7,7 @@ kdevelop-pg-qt (1.0.0-0r0) UNRELEASED; urgency=low
 
   [ Pino Toscano ]
   * Add a watch file.
+  * Bump Standards-Version to 3.9.3, no changes required.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 Jan 2012 21:38:08 +0100
 
