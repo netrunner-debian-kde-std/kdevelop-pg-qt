@@ -1,0 +1,15 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Set LIB_INSTALL_DIR even with no KDE4 stuff.
+Forwarded: no
+Last-Update: 2012-03-25
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -15,6 +15,7 @@ if(NOT KDE4_FOUND)
+     cmake_policy(SET CMP0002 OLD)
+     find_package(Qt4)
+     set(DATA_INSTALL_DIR share)
++    set(LIB_INSTALL_DIR lib)
+ endif(NOT KDE4_FOUND)
+ 
+ # Use colored output (since cmake 2.4.0)

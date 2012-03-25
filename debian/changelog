@@ -9,6 +9,8 @@ kdevelop-pg-qt (1.0.0-0r0) UNRELEASED; urgency=low
   * Add a watch file.
   * Bump Standards-Version to 3.9.3, no changes required.
   * Bump debhelper build dependency and compat to 9.
+  * Fix the installation of the cmake config files if there is no KDE4 stuff
+    available (patch fix_cmake_installation.diff).
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 30 Jan 2012 21:38:08 +0100
 
