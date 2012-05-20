@@ -1,3 +1,9 @@
+kdevelop-pg-qt (1.0.0-2) unstable; urgency=low
+
+  * Team upload. Upload to unstable.
+
+ -- Pino Toscano <pino@debian.org>  Sun, 20 May 2012 10:33:40 +0200
+
 kdevelop-pg-qt (1.0.0-1) experimental; urgency=low
 
   * Team upload.
