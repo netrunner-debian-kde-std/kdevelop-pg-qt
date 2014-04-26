@@ -1,9 +1,9 @@
-kdevelop-pg-qt (1.0.0-3) UNRELEASED; urgency=medium
+kdevelop-pg-qt (1.0.0-3) unstable; urgency=medium
 
   * Team upload.
   * New upstream patch: upstream_fix-some-warnings (Closes: #733390)
 
- -- Maximiliano Curia <maxy@debian.org>  Sat, 26 Apr 2014 13:50:53 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 26 Apr 2014 15:06:27 +0200
 
 kdevelop-pg-qt (1.0.0-2) unstable; urgency=low
 
