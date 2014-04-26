@@ -1,1 +1,2 @@
+upstream_fix-some-warnings
 fix_cmake_installation.diff
